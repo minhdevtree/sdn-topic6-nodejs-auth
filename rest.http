@@ -1,0 +1,28 @@
+### Register
+POST http://localhost:9999/auth/signUp
+Content-Type: application/json
+
+{
+    "email": "mod1@fpt.edu.vn",
+    "password": "123456",
+    "type": "local",
+    "roles": ["moderator", "member"]
+}
+
+### Signin
+POST http://localhost:9999/auth/signin
+Content-Type: application/json
+
+{
+    "email": "mod1@fpt.edu.vn",
+    "password": "123456"
+}
+
+### Access all
+GET http://localhost:9999/users/test/access-all
+Content-Type: application/json
+
+### Access moderator
+GET http://localhost:9999/users/test/access-moderator
+Content-Type: application/json 
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2N2ExOGUzYjEyYjZiYjIxOTNmY2VkYyIsImlhdCI6MTcxOTI4MzAyOSwiZXhwIjoxNzE5MjgzMTQ5fQ.UcMN7L1wNUjWpQaRVd-1ObxojLF41hMWUt1Nx7uynb4
